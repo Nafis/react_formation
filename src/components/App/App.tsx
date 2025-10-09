@@ -1,62 +1,46 @@
+import "./App.css";
+import Button from "../ui/Button/Button.js";
+import { useEffect, useState } from "react";
 
-import './App.css'
-import Button from '../ui/Button/Button.js'
 
 const App = () => {
+  const [counter, setCounter] = useState(0);
+  useEffect(()=>{
+    setCounter(0);
+    console.log('mount', counter);
+  },[]);
+  useEffect(()=>{
+    console.log('useFeccet-->', counter)
+  },[counter]);
+  useEffect(()=>{
+    console.log("allrefresh mount");
+  })
 
-  let counter=0;
-  return(
-    <div style={{textAlign: "center"}}>
+  
+  return (
+    <div style={{ textAlign: "center" }}>
       <div>valeur du count: {counter}</div>
       <hr />
-      <Button bgcolor="tomato" clickAction={()=>{
-        counter--;
-        console.log(counter);
-      }}>-1</Button>
-      <Button bgcolor="skyblue" clickAction={()=>{
-        counter++;
-        console.log(counter);
-      }}>+1</Button>
-
-
-
+      <Button
+        bgcolor="tomato"
+        clickAction={() => {
+          setCounter(counter -1);
+          console.log(counter);
+        }}
+      >
+        -1
+      </Button>
+      <Button
+        bgcolor="skyblue"
+        clickAction={() => {
+          setCounter(counter +1);
+          console.log(counter);
+        }}
+      >
+        +1
+      </Button>
     </div>
-  )
-  /*
-  return (
-    <>
-        <div>DEMAT Breizh</div>
-        <Button bgcolor="green">Nafise</Button>
-        <Button
-        type="button"
-        style={{
-          textDecoration: "unederline",
-          fontStyle: "italic",
-          backgroundColor: "grey",
-        }}
-        clickAction={(unArg)=>{
-          console.trace(unArg);
-        }}
-        >
-          Benjamin
-        </Button>
-        
-        <Button 
-        style={{pedding:"95px 95px", color:"red"}}
-         >
-          hello
-        </Button>
-        <Button value="Nafis" bgcolor="pink">
-          <div> see me</div>
-          <div> see next</div> 
-        </Button>
-        <button>push me </button>
+  );
+};
 
-
-    </>
-)
-  */
-  
-}
-
-export default App
+export default App;

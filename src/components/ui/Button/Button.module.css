@@ -10,3 +10,12 @@
     margin-bottom: 25px;
     margin-right:25px;
 }
+
+.clicked{
+    background-color: rgb(173, 135, 235);
+    box-shadow: 5px 5px 15px rgb(19, 16, 16);
+}
+
+.danger{
+    background-color: rgb(163, 25, 60);
+}
