@@ -9,9 +9,10 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "genui": "npx generate-react-cli c --type=uicmp",
-    "genlayout":  "npx generate-react-cli c --type=layoutcmp"
+    "genlayout": "npx generate-react-cli c --type=layoutcmp"
   },
   "dependencies": {
+    "orsys-tjs-meme": "^1.0.3",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },

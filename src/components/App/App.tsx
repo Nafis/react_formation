@@ -1,25 +1,31 @@
-import FlexHGrow3 from "../layout/FlexHGrow3/FlexHGrow3";
-import FlexVgrow1 from "../layout/FlexVgrow1/FlexVgrow1";
-import Footer from "../ui/Footer/Footer";
-import Header from "../ui/Header/Header";
-import MemeForm from "../functionnal/MemeForm/MemeForm";
-import MemeSVGViewer from "../ui/MemeSVGViewer/MemeSVGViewer";
-import Navbar from "../ui/Navbar/Navbar";
 import "./App.css";
-
+import "./App.css";
+import FlexHGrow3 from "../layout/FlexHGrow3/FlexHGrow3";
+import FlexVGrow1 from "../layout/FlexVGrow1/FlexVGrow1";
+import Header from "../ui/Header/Header.jsx";
+import Navbar from "../ui/Navbar/Navbar";
+import MemeForm from "../functionnal/MemeForm/MemeForm";
+import { emptyMeme, MemeSVGViewer, type MemeInterface } from "orsys-tjs-meme";
+import Footer from "../ui/Footer/Footer";
+import { useState } from "react";
 const App = () => {
+  const [currentMeme, setCurrentMeme] = useState<MemeInterface>(emptyMeme);
   return (
-    <div className="App">
-      <FlexHGrow3>
-        <Header />
-        <Navbar />
-        <FlexVgrow1>
-          <MemeSVGViewer />
-          <MemeForm />
-        </FlexVgrow1>
-        <Footer />
-      </FlexHGrow3>
-    </div>
+    <FlexHGrow3>
+      {/* <Header /> */}
+      <div>{JSON.stringify(currentMeme)}</div>
+      <Navbar />
+      <FlexVGrow1>
+        <MemeSVGViewer basePath="" image={undefined} meme={currentMeme} />
+        <MemeForm
+          meme={currentMeme}
+          onMemeChange={(newMeme: MemeInterface) => {
+            setCurrentMeme(newMeme);
+          }}
+        />
+      </FlexVGrow1>
+      <Footer />
+    </FlexHGrow3>
   );
 };
 
