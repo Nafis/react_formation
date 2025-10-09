@@ -14,3 +14,9 @@ get the fist line of console for get the plug in of react in copnsole
 
 ***************
 Rest: REprentation State Transfer
+CRUD: Create Read Update Delete
+method acces http: POST GET PUT DELETE
+erreur 4xx erreur utulisateur
+error 5xx error server
+les fichier de type .lazy une fois que tu fais yarn build après passer des tests, il te compile dans une seule fichier js et devient beacoup plus leger.
+ 
