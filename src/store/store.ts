@@ -1,11 +1,16 @@
-import { combineReducers,configureStore } from "@reduxjs/toolkit";
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import currentReducer from "./current";
 import ressourcesReducer from "./ressources";
 
-const store=configureStore({
-    reducer: combineReducers( {reducer: currentReducer, resources:ressourcesReducer }),
+const store = configureStore({
+  reducer: combineReducers({
+    current: currentReducer,
+    ressources: ressourcesReducer,
+  }),
 });
 
 export default store;
 
-console.log(store.getState())
+store.subscribe(() => {
+  console.trace(store.getState());
+});
