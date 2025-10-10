@@ -33,6 +33,7 @@ install react devtool in your navigator google chrome
 fichier .ts only for redux
 racourci*********** tap rxslice ===> il te met tout
 ********************rafc==> il te met tout sur MemoForm.stored.jsx
+tsrfe ==> for rooter
 
 type: string toujours une adresse ou se trouver
 payload: le data
@@ -47,3 +48,7 @@ project: guthub.com/champix56/2025-10-06
 
 
 the notice:  children, props, promise, redux, useState useEffect, await(attend pour passer à la lign après), fetch.then
+
+
+react-router
+yarn add react-bootstrap bootstrap

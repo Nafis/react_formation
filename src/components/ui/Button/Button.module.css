@@ -1,21 +1,23 @@
 .Button {
-    border: blueviolet, 2px, solid;
-    background-color: skyblue;
-    padding: 5px 10px;
-    font-size: xx-large;
-    font-weight: 900;
-    box-shadow: 15px 15px 25px gray;
-    color:white;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-right:25px;
-}
+  border: none;
+  border-radius: 7px;
+  padding: 5px 10px;
 
-.clicked{
-    background-color: rgb(173, 135, 235);
-    box-shadow: 5px 5px 15px rgb(19, 16, 16);
-}
+  font-weight: 900;
+  font-size: xx-large;
+  box-shadow: 15px 15px 25px grey;
 
-.danger{
-    background-color: rgb(163, 25, 60);
+  margin-bottom: 27px;
+  margin-right: 10px;
+
+  background-color: skyblue;
+  color: white;
+}
+.clicked {
+  box-shadow: 5px 5px 25px grey;
+  border: 1px solid grey;
+  padding: 4px 9px;
+}
+.danger {
+  background-color: tomato;
 }
