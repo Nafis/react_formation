@@ -1,11 +1,11 @@
 /* eslint-disable */
-import FlexVgrow1 from './FlexVgrow1';
+import FlexVGrow1 from './FlexVGrow1';
 
 export default {
-  title: "FlexVgrow1",
+  title: "FlexVGrow1",
 };
 
-export const Default = () => <FlexVgrow1> coucou </FlexVgrow1> />;
+export const Default = () => <FlexVGrow1 >coucou</FlexVGrow1>;
 
 Default.story = {
   name: 'default',

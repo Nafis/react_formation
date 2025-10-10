@@ -1,14 +1,14 @@
-import React from 'react';
+//@ts-ignore
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import FlexVgrow1 from './FlexVgrow1';
+import FlexVGrow1 from './FlexVGrow1';
 
-describe('<FlexVgrow1 />', () => {
+describe('<FlexVGrow1 />', () => {
   test('it should mount', () => {
-    render(<FlexVgrow1> <div>hello</div></FlexVgrow1>);
+    render(<FlexVGrow1 ><div>Hello</div></FlexVGrow1>);
 
-    const flexVgrow1 = screen.getByTestId('FlexVgrow1');
+    const flexVGrow1 = screen.getByTestId('FlexVGrow1');
 
-    expect(flexVgrow1).toBeInTheDocument();
+    expect(flexVGrow1).toBeInTheDocument();
   });
 });

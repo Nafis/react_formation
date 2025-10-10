@@ -1,11 +1,11 @@
 import React, { lazy, Suspense } from 'react';
 
-const LazyFlexVgrow1 = lazy(() => import('./FlexVgrow1'));
-
-const FlexVgrow1 = (props: JSX.IntrinsicAttributes & { children?: React.ReactNode; }) => (
+const LazyFlexVGrow1 = lazy(() => import('./FlexVGrow1'));
+//@ts-ignore
+const FlexVGrow1 = (props: JSX.IntrinsicAttributes & { children?: React.ReactNode; }) => (
   <Suspense fallback={null}>
-    <LazyFlexVgrow1 {...props} />
+    <LazyFlexVGrow1 {...props} />
   </Suspense>
 );
 
-export default FlexVgrow1;
+export default FlexVGrow1;

@@ -5,7 +5,7 @@ export default {
   title: "FlexHGrow3",
 };
 
-export const Default = () => <FlexHGrow3> coucou </FlexHGrow3> />;
+export const Default = () => <FlexHGrow3 >coucou</FlexHGrow3>;
 
 Default.story = {
   name: 'default',

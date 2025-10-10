@@ -40,3 +40,10 @@ payload: le data
 
 cs6==> quand on impotr from an component 
 if  {qqch} inside {} it import le secondaire otherwise if there is no aculade il import avec n'import quel nom le export par defaut de ce fichier
+par exemple 
+
+
+project: guthub.com/champix56/2025-10-06
+
+
+the notice:  children, props, promise, redux, useState useEffect, await(attend pour passer à la lign après), fetch.then

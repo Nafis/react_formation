@@ -4,5 +4,5 @@
     height:97vh;
 }
 .FlexHGrow3>div:nth-child(3){
-    flex-grow: 1 ;
+    flex-grow: 1;
 }
