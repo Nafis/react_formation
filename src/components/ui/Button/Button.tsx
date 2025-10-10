@@ -22,12 +22,12 @@ const Button: React.FC<IButtonProps> = ({
       setclicked(false)
     }, 300);
   }, [clicked]);
-  console.trace(style);
+  
   const buttonOnClick = (
     evt: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
     setclicked(true);
-    console.log("button clicked", evt);
+    
     if (clickAction) {
       clickAction("on m'a violamment cliqué dessous");
     }

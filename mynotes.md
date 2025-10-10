@@ -26,3 +26,17 @@ pour voir quel état en dehors de structure du projet en pararelle sont des él�
 pour voir qui sont plus utilisé : npmtrend.com: redux flux mobx zustand @reduxjs/toolkit react-redux
 for debugging : redux devtools
 for installing redux in react : yarn add @reduxjs/toolkit
+yarn add react-redux
+
+install react devtool in your navigator google chrome
+
+fichier .ts only for redux
+racourci*********** tap rxslice ===> il te met tout
+********************rafc==> il te met tout sur MemoForm.stored.jsx
+
+type: string toujours une adresse ou se trouver
+payload: le data
+
+
+cs6==> quand on impotr from an component 
+if  {qqch} inside {} it import le secondaire otherwise if there is no aculade il import avec n'import quel nom le export par defaut de ce fichier

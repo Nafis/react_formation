@@ -14,8 +14,12 @@ import {
 import Footer from "../ui/Footer/Footer";
 import { REST_ADR, REST_RESSOURCES } from "../../config/constantes.js";
 import { useEffect, useState } from "react";
+import store from "../../store/store";
+
+
 // import {memes as rest_memes,images as rest_imgs} from '../../../db/db.json'
 const App = () => {
+  console.log(store)
   const [currentMeme, setCurrentMeme] = useState<MemeInterface>(emptyMeme);
   const [images, setImages] = useState<Array<ImageInterface>>([]);
   useEffect(() => {
