@@ -19,4 +19,10 @@ method acces http: POST GET PUT DELETE
 erreur 4xx erreur utulisateur
 error 5xx error server
 les fichier de type .lazy une fois que tu fais yarn build après passer des tests, il te compile dans une seule fichier js et devient beacoup plus leger.
- 
+
+
+***************************
+pour voir quel état en dehors de structure du projet en pararelle sont des éléménent on utilise redux
+pour voir qui sont plus utilisé : npmtrend.com: redux flux mobx zustand @reduxjs/toolkit react-redux
+for debugging : redux devtools
+for installing redux in react : yarn add @reduxjs/toolkit

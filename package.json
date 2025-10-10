@@ -10,9 +10,10 @@
     "preview": "vite preview",
     "genui": "npx generate-react-cli c --type=uicmp",
     "genlayout": "npx generate-react-cli c --type=layoutcmp",
-    "json":"json-server -p 5629 db/db.json"
+    "json": "json-server -p 5629 db/db.json"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.9.0",
     "json-server": "0.17.4",
     "orsys-tjs-meme": "^1.0.3",
     "react": "^19.1.1",
