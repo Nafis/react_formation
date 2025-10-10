@@ -52,3 +52,5 @@ the notice:  children, props, promise, redux, useState useEffect, await(attend p
 
 react-router
 yarn add react-bootstrap bootstrap
+
+react native is good for application téléphone 
